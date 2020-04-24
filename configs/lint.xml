@@ -10,6 +10,7 @@
     </issue>
 
     <issue id="GradleDependency" severity="warning" />
+    <issue id="GradleCompatible" severity="warning" />
 
     <issue id="InvalidPackage" severity="ignore" />
 
@@ -17,6 +18,16 @@
         <!-- ignoring translations from crowdin -->
         <ignore path="src/main/res/values-*/strings.xml" />
     </issue>
+
+    <issue id="VisibleForTests" severity="error" >
+        <ignore path="*/AnySoftKeyboardRobolectricTestRunner.java" />
+    </issue>
+
+    <issue id="StringFormatCount" severity="fatal" />
+
+    <issue id="Recycle" severity="error" />
+
+    <issue id="HandlerLeak" severity="error" />
 
     <issue id="TypographyEllipsis" severity="error" >
         <!-- ignoring translations from crowdin -->
@@ -32,4 +43,8 @@
         <ignore path="**/strings_do_not_translate.xml" />
         <ignore path="**/layout/*.xml" />
     </issue>
+
+    <issue id="DisableBaselineAlignment" severity="error" />
+
+    <issue id="Autofill" severity="warning" />
 </lint>
